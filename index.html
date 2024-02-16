@@ -40,7 +40,7 @@
              <div>
                  <div class="flex justify-center gap-1 my-1 w-full">
                      <kbd id="q" class="kbd">q</kbd>
-                     <kbd id="w class="kbd">w</kbd>
+                     <kbd id="w" class="kbd">w</kbd>
                      <kbd id="e" class="kbd">e</kbd>
                      <kbd id="r" class="kbd">r</kbd>
                      <kbd id="t" class="kbd">t</kbd>
@@ -78,24 +78,24 @@
                  <button class="btn rounded-full bg-purple-700 text-white px-4">
                      Life
                      <img src="images/heart .svg" alt="">
-                     <span>1</span>
+                     <span id="life">5</span>
                    </button>
                    <button class="btn rounded-full bg-purple-700 text-white px-4">
                      score 
                      <img src="images/dollar.svg" alt="">
-                     <span>1</span>
+                     <span id ="current-score">0</span>
                    </button>
              </div>
             </div>
         </section>
         <!-- final score  -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-8 bg-[#FFFFFF33] p-4 rounded-lg">
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span id="final-score-value">14</span>
                 </h1>
-                <button class="btn">Play Again</button>
+                <button onclick="play()" id="play-again" class="btn">Play Again</button>
                 <p>Practice will make you pro</p>
             </div>
         </section>
